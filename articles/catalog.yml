@@ -2,10 +2,10 @@ PREDEF:
   - preface.re
 
 CHAPS:
-  - po3rin.re
-  - micchie.re
   - budougumi0617.re
   - knsh14.re
+  - micchie.re
+  - po3rin.re
 
 APPENDIX:
 
