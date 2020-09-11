@@ -1,5 +1,8 @@
 = 著者紹介
 
+== @<chap>{po3rin} Go+Burrows-Wheeler変換で入門する文字列解析の世界 / @<tt>{@po3rin}
+エムスリーのソフトウェアエンジニア。Goやコンテナ、検索が好き。最近自宅の作業スペースにウォーターサーバと冷蔵庫を導入しドン勝ちした。
+
 == @<chap>{micchie} たのしいUML / @<tt>{@micchiebear}
 LINEでプロジェクトをマネジメントしながら業務設計と熊を愛するGopherです。
 GoとGoogle Cloud PlatformとVimと自転車とキーボードが生活すぎて、将来的にはキーボードになって死にたい。
