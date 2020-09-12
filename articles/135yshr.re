@@ -72,7 +72,7 @@ $ hide-a-leaf encode {元になるPNGファイル} {隠したいファイル}
 
 文字列を隠したいときは、-text パラメータを指定すると2つ目パラメータを文字列して取り扱います
 //cmd{
-$ hide-a-leaf encode {元になるPNGファイル} {隠したい文字列} -text
+$ hide-a-leaf -text encode {元になるPNGファイル} {隠したい文字列}
 //}
 
 ==== 隠したファイルを取り出す
@@ -84,7 +84,7 @@ $ hide-a-leaf decode {データが隠されたPNGファイル}
 
 文字列として取得したいときは、-text パラメータを指定します
 //cmd{
-$ hide-a-leaf decode {データが隠されたPNGファイル} -text
+$ hide-a-leaf -text decode {データが隠されたPNGファイル}
 //}
 
 === コードの解説
