@@ -69,7 +69,7 @@ $ go install github.com/135yshr/hide-a-leaf
 プログラムは、指定したPNG画像に隠したいデータを隠す@<code>{encode}機能と画像から隠されたデータを取得する@<code>{decode}機能の２つの機能を提供します。
 
 ==== ファイルを隠す
-元になるPNGファイルと隠したいファイルをパラメータに指定することで、encode.png が作られます。
+元になるPNGファイルと隠したいファイルをパラメータに指定することで、encode.pngが作られます。
 
 //cmd{
 $ hide-a-leaf encode {元になるPNGファイル} {隠したいファイル}
