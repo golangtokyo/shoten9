@@ -98,13 +98,13 @@ $ hide-a-leaf -text decode {データが隠されたPNGファイル}
 ==== データを画像に隠すコード
 
 @<list>{hide_data_in_image}に示す@<code>{Encode}関数を使って画像ファイルにデータを隠します。
-前提条件として、画像データはデコード済みであり、隠したいデータは @<code>{[]byte} に変換済みである必要があります。
+前提条件として、画像データはデコード済みであり、隠したいデータは@<code>{[]byte}に変換済みである必要があります。
 
  1. 画像は、左上から読み始め、右に１ドットずつ読み進める
  2. 右端まで読み終わると、読み込むドットの位置をひとつ下げ左端から読み始める
  3. 読み込んだ1ドットのデータは、RGBAに変換し、変換できないときはそのドットを読み飛ばす
- 4. 1ドットのデータと隠したいデータ1byteを hiding (ビット置き換え関数)に渡し、その結果を新しい画像データ１ドットとして書き加える
- 5. 後は、すべてのドットを読み終わるまで 2〜4 を繰り返す
+ 4. 1ドットのデータと隠したいデータ1byteを hiding (ビット置き換え関数）に渡し、その結果を新しい画像データ１ドットとして書き加える
+ 5. 後は、すべてのドットを読み終わるまで2〜4を繰り返す
 
 //list[hide_data_in_image][データを画像ファイルに隠す][go]{
 func Encode(cover image.Image, text []byte) image.Image {
@@ -186,6 +186,6 @@ func Decode(cover image.Image) []byte {
 最後になりますが、読んでいただき本当にありがとうございました。
 
 === 参考文献
- * 新見 道治 (2003) ディジタルステガノグラフィに関する研究
- * ステガノグラフィで画像に文章を隠蔽してみた（Python） https://muroiwataru.net/entry/steganography
- * Goでステガノグラフィやってみる https://blog.applibot.co.jp/2020/03/23/go-steganography/
+ * 新見 道治 (2003) ディジタルステガノグラフィに関する研究 @<href>{https://core.ac.uk/download/pdf/147423194.pdf}
+ * ステガノグラフィで画像に文章を隠蔽してみた（Python） @<href>{https://muroiwataru.net/entry/steganography}
+ * Goでステガノグラフィやってみる @<href>{https://blog.applibot.co.jp/2020/03/23/go-steganography/}
