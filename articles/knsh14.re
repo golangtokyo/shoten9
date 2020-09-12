@@ -5,7 +5,7 @@
 
 本章で解説するパーサの実装はGitHub@<fn>{github_repo_link}で公開しています。
 
-//footnote[github_repo_link][@<href>{https://github.com/knsh14/ical}]
+//footnote[github_repo_link][@<href>{https://github.com/knsh14/ical/tree/v0.0.2}]
 
 == Goの実行環境
 OSはmacOS 10.14.6です。
@@ -1011,7 +1011,7 @@ func main() {
 そのため、一度文字列のスライスを生成した後は並列に処理することで、パフォーマンスを向上させることができます。
 並列に処理する実装を@<list>{implementation_process_converting}に示します。
 
-//list[implementation_process_converting][並列に文字列をコンテンツラインへ返還する処理][go]{
+//list[implementation_process_converting][並列に文字列をコンテンツラインへ変換する処理][go]{
 func parseFromScanner(scanner *bufio.Scanner) (*ical.Calender, error) {
     lines, err := scanLines(scanner)
     if err != nil {
@@ -1055,6 +1055,7 @@ func parseFromScanner(scanner *bufio.Scanner) (*ical.Calender, error) {
 
 == 最後に
 言語処理系の実装のアイデアを利用して、iCalendar形式のファイルをパースし、Goのオブジェクトに変換するライブラリを実装しました。
-言語処理系を実装するのは心理的ハードルが高いですが、まずはこのようなファイルをパースするだけのライブラリを実装することで字句解析、構文解析への理解を深めることができます。
+言語処理系の実装は難しいと思われがちです。
+しかし、まずはこのようなファイルをオブジェクトに変換するライブラリを実装することで字句解析、構文解析への理解を深めることができます。
 
 iCalendarの仕様はあいまいに作られている部分が多く実装に苦労しましたが、便利なライブラリなのでカレンダーの処理に興味があればぜひ使ってみてください。
